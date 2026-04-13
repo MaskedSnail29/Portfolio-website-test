@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5; /* Matches the intro page */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ecf0f1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2980b9;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #2980b9;
+            display: block;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+
+        /* Category Card Styling */
+        .skill-category {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #2980b9; /* Visual anchor from intro page */
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: #2980b9;
+            margin-top: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Skill Item Layout */
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        /* Modern Progress Bars */
+        .skill-bar-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            height: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #2980b9, #3498db);
+            border-radius: 10px;
+            transition: width 1.5s cubic-bezier(0.1, 0.42, 0.41, 1);
+            position: relative;
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        li {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            color: #555;
+            font-size: 0.95rem;
+            border: 1px solid #eee;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background: #eef7ff;
+            color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Technical Expertise</h1>
+        
+        <section class="skill-category">
+            <h3>Development & Coding</h3>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Web Fundamentals (HTML/CSS)</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Logic (C / QBASIC / Block programming )</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            </section>
+
+        <section class="skill-category">
+            <h3>Profound Attributes</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>Strategic Planning</li>
+                <li>Fast Learner</li>
+                <li>Adaptability</li>
+            </ul>
+        </section>
+
+        <section class="skill-category">
+            <h3>Creative & Leisure</h3>
+            <div class="description">
+                <p></p>I also diverse into skills that help sharpen the brain whilest calming it.</p>
+                <ul>
+                    <li>Musical Instruments</li>
+                    <li>Competitive Gaming</li>
+                    <li>Hardware Optimization</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

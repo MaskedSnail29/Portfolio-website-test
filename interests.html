@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ecf0f1;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2980b9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #2980b9;
+            display: inline-block;
+            margin-bottom: 50px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        /* The Grid Layout */
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Dynamic Hobby Card */
+        .hobby-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-bottom: 4px solid transparent;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-bottom: 4px solid #2980b9;
+        }
+
+        /* Image Bubble Styling */
+        .bubble {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #f0f2f5;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-card:hover .bubble {
+            transform: scale(1.1);
+            border-color: #2980b9;
+        }
+
+        .bubble img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Interests & Passions</h1>
+
+        <div class="hobby-grid">
+            
+            <div class="hobby-card">
+                <div class="bubble">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200" alt="Gaming">
+                </div>
+                <h3>Competitive Gaming</h3>
+                <p>I have always loved fps games especially with freinds it helps to distract our selves from tension/stress and enjoy the moment.
+                    Games like Valorant and CS:GO are some fps games I used to play. Along with some solo open world games like Gta 5 and dying light.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="bubble">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=200" alt="Reading">
+                </div>
+                <h3>Literature & Manga</h3>
+                <p>Sometimes I also try to learn from books that teaches us about the human nature(Atomic Habits), the books that help us find purpose in life that teaches us things schools never could.
+                    I also love fantasy fiction also leaned to some Manhwas like Magic emperor.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="bubble">
+                    <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=200" alt="Music">
+                </div>
+                <h3>Musical Instruments</h3>
+                <p>Someitmes I prefer to play and learn the guitar or madal or the fulte all by my slef as it give a sense of peace to me perosonally.</p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="bubble">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=200" alt="Skill Learning">
+                </div>
+                <h3>Technical Interests</h3>
+                <p> I have always been a curious child when it comes to tech and science there is something that connects me to my old laptop. I have learned mnay skills over the years of using this old laptop some basic photo editing and video editing skills.
+                    But also the the overall technical proficiency that I have learned naturally over the year of the use of my laptop. </p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
